@@ -1,0 +1,62 @@
+{
+  "bounds": [
+    -180,
+    -85.05112877980659,
+    180,
+    85.05112877980659
+  ],
+  "center": [
+    0,
+    0,
+    2
+  ],
+  "format": "png",
+  "interactivity": {
+    "layer": "earthquakes",
+    "template_teaser": "{{{mag}}} mag Earthquake<br/>{{{DateTime}}}  ![](/tilemill/assets/pages/tooltips-4.png)"
+  },
+  "minzoom": 0,
+  "maxzoom": 22,
+  "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+  "Stylesheet": [
+    "style.mss"
+  ],
+  "Layer": [
+    {
+      "id": "countries",
+      "name": "countries",
+      "srs": "+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over",
+      "geometry": "polygon",
+      "Datasource": {
+        "file": "http://mapbox-geodata.s3.amazonaws.com/natural-earth-1.4.0/cultural/10m-admin-0-countries.zip",
+        "type": "shape"
+      }
+    },
+    {
+      "geometry": "point",
+      "extent": [
+        -179.90180000000004,
+        -45.7473,
+        174.2195,
+        69.1096
+      ],
+      "id": "earthquakes",
+      "class": "",
+      "Datasource": {
+        "file": "C:\\Users\\mhuh22\\Downloads\\all_month.csv",
+        "id": "earthquakes",
+        "project": "crashcourse",
+        "srs": ""
+      },
+      "srs-name": "autodetect",
+      "srs": "",
+      "advanced": {},
+      "name": "earthquakes"
+    }
+  ],
+  "scale": 1,
+  "metatile": 2,
+  "name": "",
+  "description": "",
+  "legend": "<strong>Magnitude 2.5+ Earthquakes (Past Month)</strong><br/>Circle size indicates magnitude of earthquake.  ![](/tilemill/assets/pages/legend-2.png)"
+}

@@ -1,0 +1,6 @@
+Name: Matthew Huh
+
+ArcGIS Server URL: http://qilin.geog.uw.edu:6080/arcgis/rest/services/458_Huh
+
+For this lab, I learned how to accept user input, how to create a geoprocessing tool, and 
+how to upload onto the server from the professsor. No further discussion was necessary.
